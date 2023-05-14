@@ -223,11 +223,11 @@ KEYMAPS(
    ___),
 
   [META] =  KEYMAP_STACKED
-  (___, LSHIFT(LGUI(Key_Spacebar)), Key_F2, Key_F3,                    Key_F4,                   Key_F5, ___,
-   ___, ___,                        ___,    ___,                       LCTRL(LALT(LGUI(Key_R))), ___,    ___,
-        ___,                        ___,    ___,                       ___,                      ___,    ___,
-   ___, ___,                        ___,    LSHIFT(LALT(LGUI(Key_C))), ___,                      ___,    ___,
-   ___, ___, ___, ___,
+  (___, LSHIFT(LGUI(Key_Spacebar)),      Key_F2, Key_F3, Key_F4,                    Key_F5, ___,
+   ___, ___,                             ___,    ___,    LCTRL(LALT(LGUI(Key_R))),  ___,    ___,
+        LSHIFT(LCTRL(LALT(LGUI(Key_UpArrow)))), ___,    ___,    ___,                       ___,    ___,
+   LSHIFT(LCTRL(LALT(LGUI(Key_DownArrow)))),    ___,    ___,    LSHIFT(LALT(LGUI(Key_C))), ___,    ___,    ___,
+   ___,                                  ___,    ___,    ___,
    ___,
 
    ___,               Key_F6,                     Key_F7,                              Key_F8,                              Key_KeypadLeftParen,         Key_KeypadRightParen, ___,
@@ -317,18 +317,18 @@ COLORMAPS(
    BLACK),
 
   [FUNCTION] =  COLORMAP_STACKED
-  (BLACK, BLACK, BLACK, BLACK, BLACK,  BLACK,  BLACK,
-   BLACK, GREEN, CYAN,  GREEN, YELLOW, BLACK,  BLACK,
-          BLACK, CYAN,  CYAN,  CYAN,   YELLOW, BLACK,
-   BLACK, BLACK, BLACK, BLACK, YELLOW, BLACK,  BLACK,
-   BLACK, BRIGHT_RED, BLACK, BLACK,
+  (BLACK,  BLACK,      BLACK, BLACK, BLACK,  BLACK,  BLACK,
+   BLACK,  GREEN,      CYAN,  GREEN, YELLOW, BLACK,  BLACK,
+           ORANGE,     CYAN,  CYAN,  CYAN,   YELLOW, BLACK,
+   ORANGE, BLACK,      BLACK, BLACK, YELLOW, BLACK,  BLACK,
+   BLACK,  BRIGHT_RED, BLACK, BLACK,
    BLACK,
 
    BLACK,        BLACK,  BLACK,  BLACK,  BLACK,  BLACK,  BLACK,
    BLACK,        BLACK,  BLACK,  BLACK,  BLACK,  BLACK,  BLACK,
                  GREEN,  GREEN,  GREEN,  GREEN,  ORANGE, ORANGE,
    BRIGHT_RED,   ORANGE, ORANGE, ORANGE, ORANGE, BLACK,  BLACK,
-   BLACK, BLACK, GREEN, BLACK,
+   BLACK, BLACK, GREEN,  BLACK,
    BLACK),
 
   [META] =  COLORMAP_STACKED
