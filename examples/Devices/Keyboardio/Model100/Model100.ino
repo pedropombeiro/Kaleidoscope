@@ -220,11 +220,11 @@ KEYMAPS(
    ___),
 
   [META] =  KEYMAP_STACKED
-  (___, LSHIFT(LGUI(Key_Spacebar)),      Key_F2, Key_F3, Key_F4,                    Key_F5, ___,
-   ___, ___,                             ___,    ___,    LCTRL(LALT(LGUI(Key_R))),  ___,    ___,
-        LSHIFT(LCTRL(LALT(LGUI(Key_UpArrow)))), ___,    ___,    ___,                       ___,    ___,
-   LSHIFT(LCTRL(LALT(LGUI(Key_DownArrow)))),    ___,    ___,    LSHIFT(LALT(LGUI(Key_C))), ___,    ___,    ___,
-   ___,                                  ___,    ___,    ___,
+  (___, LSHIFT(LGUI(Key_Spacebar)), Key_F2, Key_F3, Key_F4,                    Key_F5, ___,
+   ___, ___,                        ___,    ___,    LCTRL(LALT(LGUI(Key_R))),  ___,    ___,
+        HYPER(Key_UpArrow),         ___,    ___,    ___,                       ___,    ___,
+   HYPER(Key_DownArrow),            ___,    ___,    LSHIFT(LALT(LGUI(Key_C))), ___,    ___,    ___,
+   ___,                             ___,    ___,    ___,
    ___,
 
    ___,               Key_F6,                     Key_F7,                              Key_F8,                              Key_KeypadLeftParen,         Key_KeypadRightParen, ___,
