@@ -72,9 +72,6 @@
 // Support for dynamic, Chrysalis-editable macros
 // #include "Kaleidoscope-DynamicMacros.h"
 
-// Support for SpaceCadet keys
-// #include "Kaleidoscope-SpaceCadet.h"
-
 // Support for editable layer names
 #include "Kaleidoscope-LayerNames.h"
 
@@ -404,18 +401,6 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
   return MACRO_NONE;
 }
 
-
-// static kaleidoscope::plugin::SpaceCadet::KeyBinding spacecadetmap[] = {
-//   { Key_LeftShift, Key_LeftParen, 250 },
-//   { Key_RightShift, Key_RightParen, 250 },
-//   { Key_LeftGui, Key_LeftCurlyBracket, 250 },
-//   { Key_RightAlt, Key_RightCurlyBracket, 250 },
-//   { Key_LeftAlt, Key_RightCurlyBracket, 250 },
-//   { Key_LeftControl, Key_LeftBracket, 250 },
-//   { Key_RightControl, Key_RightBracket, 250 },
-//   SPACECADET_MAP_END
-// };
-
 /** toggleLedsOnSuspendResume toggles the LEDs off when the host goes to sleep,
  * and turns them back on when it wakes up.
  */
@@ -558,12 +543,6 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // performed when tapped, but the secondary action when held.
   Qukeys,
 
-  // SpaceCadet can turn your shifts into parens on tap, while keeping them as
-  // Shifts when held. SpaceCadetConfig lets Chrysalis configure some aspects of
-  // the plugin.
-  // SpaceCadet,
-  // SpaceCadetConfig,
-
   // Enables the "Sticky" behavior for modifiers, and the "Layer shift when
   // held" functionality for layer keys.
   // OneShot,
@@ -684,12 +663,6 @@ void setup() {
   // If there's a default layer set in EEPROM, we should set that as the default
   // here.
   Layer.move(EEPROMSettings.default_layer());
-
-  // To avoid any surprises, SpaceCadet is turned off by default. However, it
-  // can be permanently enabled via Chrysalis, so we should only disable it if
-  // no configuration exists.
-  // SpaceCadetConfig.disableSpaceCadetIfUnconfigured();
-  // SpaceCadet.setMap(spacecadetmap);
 
   // Editable layer names are stored in EEPROM too, and we reserve 16 bytes per
   // layer for them. We need one extra byte per layer for bookkeeping, so we
