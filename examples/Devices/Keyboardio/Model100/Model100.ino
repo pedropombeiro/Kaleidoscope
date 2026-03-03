@@ -192,7 +192,7 @@ KEYMAPS(
    TD(TD_LCTRL), Key_Backspace, TD(TD_LCMD), TD(TD_LSHIFT),
    ShiftToLayer(META),
 
-   LCTRL(LGUI(Key_LeftAlt)), Key_6,       Key_7,        Key_8,     Key_9,      Key_0,         XXX,
+   LCTRL(LGUI(Key_LeftAlt)), Key_6,       Key_7,        Key_8,     Key_9,      Key_0,         Key_CapsLock,
    Key_Enter,                Key_Y,       Key_U,        Key_I,     Key_O,      Key_P,         Key_Equals,
                              Key_H,       Key_J,        Key_K,     Key_L,      Key_Semicolon, Key_Quote,
    LGUI(Key_Spacebar),       Key_N,       Key_M,        Key_Comma, Key_Period, Key_Slash,     Key_Minus,
