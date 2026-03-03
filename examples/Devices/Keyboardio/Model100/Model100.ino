@@ -357,36 +357,6 @@ COLORMAPS(
 /* Re-enable astyle's indent enforcement */
 // clang-format on
 
-#define RGB_UNSET CRGB(0x00, 0x00, 0x00)
-#define RGB_RED   CRGB(0xff, 0x00, 0x00)
-
-// Set up a default palette to be use for the Colormap and Colormap-Overlay
-// plugins
-PALETTE(
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_UNSET,
-  RGB_RED)  // PALETTE(
 
 /** versionInfoMacro handles the 'firmware version info' macro
  *  When a key bound to the macro is pressed, this macro
@@ -640,10 +610,6 @@ KALEIDOSCOPE_INIT_PLUGINS(
 
   DefaultColormap,
 
-  // The HostPowerManagement plugin allows us to turn LEDs off when then host
-  // goes to sleep, and resume them when it wakes up.
-  HostPowerManagement,
-
   // Turns LEDs off after a configurable amount of idle time.
   IdleLEDs,
   PersistentIdleLEDs,
@@ -719,14 +685,6 @@ void setup() {
   // Set the hue of the boot greeting effect to something that will result in a
   // nice green color.
   BootGreetingEffect.hue = 85;
-
-  // We configure the AlphaSquare effect to use RED letters
-  AlphaSquare.color = CRGB(255, 0, 0);
-
-  // Set the rainbow effects to be reasonably bright, but low enough
-  // to mitigate audible noise in some environments.
-  LEDRainbowEffect.brightness(170);
-  LEDRainbowWaveEffect.brightness(160);
 
   // Set the action key the test mode should listen for to Left Fn
   HardwareTestMode.setActionKey(R3C6);
