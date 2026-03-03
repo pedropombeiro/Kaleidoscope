@@ -1,0 +1,5 @@
+[tasks."flash:model-100"]
+description = "Flash firmware to Keyboardio Model 100"
+dir = "{{config_root}}/examples/Devices/Keyboardio/Model100"
+env = { KALEIDOSCOPE_DIR = "{{config_root}}" }
+run = "make flash"
