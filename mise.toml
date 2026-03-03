@@ -3,3 +3,7 @@ description = "Flash firmware to Keyboardio Model 100"
 dir = "{{config_root}}/examples/Devices/Keyboardio/Model100"
 env = { KALEIDOSCOPE_DIR = "{{config_root}}" }
 run = "make flash"
+
+[tasks."eeprom:erase"]
+description = "Erase EEPROM on connected Keyboardio keyboard"
+run = "DEVICE=$(ls /dev/cu.usbmodem* 2>/dev/null | head -1) {{config_root}}/bin/focus-send eeprom.erase"
