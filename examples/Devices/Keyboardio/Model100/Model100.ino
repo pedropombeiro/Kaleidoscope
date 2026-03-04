@@ -240,7 +240,7 @@ KEYMAPS(
    ___,               Key_F6,                     Key_F7,                              Key_F8,                              Key_KeypadLeftParen,         Key_KeypadRightParen, ___,
    ___,               ___,                        Key_LeftCurlyBracket,                Key_RightCurlyBracket,               Key_LeftBracket,             Key_RightBracket,     ___,
                       LCTRL(LALT(Key_LeftArrow)), LCTRL(Key_DownArrow),                LCTRL(Key_UpArrow),                  LCTRL(LALT(Key_RightArrow)), ___,                  ___,
-   ___,               ___,                        Consumer_DisplayBrightnessDecrement, Consumer_DisplayBrightnessIncrement, Consumer_PlaySlashPause,     Key_Backslash,        Key_Pipe,
+   Key_CapsLock,      ___,                        Consumer_DisplayBrightnessDecrement, Consumer_DisplayBrightnessIncrement, Consumer_PlaySlashPause,     Key_Backslash,        Key_Pipe,
    ___, ___, ___, ___,
    ___)
 ) // KEYMAPS(
